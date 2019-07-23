@@ -1,6 +1,7 @@
 var searchData=
 [
   ['ts_5farr_5ffill',['ts_arr_fill',['../tinyspline_8h.html#a997ea4b1b2b78d2e0c4d93d84adbc9dc',1,'tinyspline.c']]],
+  ['ts_5fbspline_5fbisect',['ts_bspline_bisect',['../tinyspline_8h.html#a52b5d4da7cbdd83ed1546406f9cffe99',1,'tinyspline.c']]],
   ['ts_5fbspline_5fbuckle',['ts_bspline_buckle',['../tinyspline_8h.html#ab6a02577f496bad0ce14b07ef09fa4c2',1,'tinyspline.c']]],
   ['ts_5fbspline_5fcontrol_5fpoint_5fat',['ts_bspline_control_point_at',['../tinyspline_8h.html#af1c3b8ed888df26dee77b7faf193b9ee',1,'tinyspline.c']]],
   ['ts_5fbspline_5fcontrol_5fpoints',['ts_bspline_control_points',['../tinyspline_8h.html#a1136f653df1b0b09ff70fb1c7724d31a',1,'tinyspline.c']]],

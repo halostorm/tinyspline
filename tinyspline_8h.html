@@ -202,7 +202,8 @@ Enumerations</h2></td></tr>
 <a class="el" href="tinyspline_8h.html#a565ff3761d90530714283629d1850e9aa88cfba25410f1c6a51f276b8e920666a">TS_IO_ERROR</a> = -11, 
 <a class="el" href="tinyspline_8h.html#a565ff3761d90530714283629d1850e9aacda93d3f19672d945432b10c027fa377">TS_PARSE_ERROR</a> = -12, 
 <br />
-&#160;&#160;<a class="el" href="tinyspline_8h.html#a565ff3761d90530714283629d1850e9aaded6cd30e818b4280046bbfa36d8cf65">TS_INDEX_ERROR</a> = -13
+&#160;&#160;<a class="el" href="tinyspline_8h.html#a565ff3761d90530714283629d1850e9aaded6cd30e818b4280046bbfa36d8cf65">TS_INDEX_ERROR</a> = -13, 
+<a class="el" href="tinyspline_8h.html#a565ff3761d90530714283629d1850e9aa2676da0bf50393868da0d8c168c6ae57">TS_NO_RESULT</a> = -14
 <br />
  }</td></tr>
 <tr class="separator:a565ff3761d90530714283629d1850e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -296,6 +297,8 @@ Functions</h2></td></tr>
 <tr class="separator:abd6bbb2ed86c67f2ae3824550cfce8f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf92a68d08f8416bc53514f6f7e13f4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tinyspline_8h.html#a565ff3761d90530714283629d1850e9a">tsError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tinyspline_8h.html#abf92a68d08f8416bc53514f6f7e13f4e">ts_bspline_eval</a> (const <a class="el" href="structts_b_spline.html">tsBSpline</a> *spline, tsReal u, <a class="el" href="structts_de_boor_net.html">tsDeBoorNet</a> *_deBoorNet_, <a class="el" href="structts_status.html">tsStatus</a> *status)</td></tr>
 <tr class="separator:abf92a68d08f8416bc53514f6f7e13f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52b5d4da7cbdd83ed1546406f9cffe99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tinyspline_8h.html#a565ff3761d90530714283629d1850e9a">tsError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tinyspline_8h.html#a52b5d4da7cbdd83ed1546406f9cffe99">ts_bspline_bisect</a> (const <a class="el" href="structts_b_spline.html">tsBSpline</a> *spline, tsReal value, tsReal epsilon, size_t index, int ascending, size_t max_iter, <a class="el" href="structts_de_boor_net.html">tsDeBoorNet</a> *net, <a class="el" href="structts_status.html">tsStatus</a> *status)</td></tr>
+<tr class="separator:a52b5d4da7cbdd83ed1546406f9cffe99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a172d455240543f5c04dbd0fda15c1c46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tinyspline_8h.html#a172d455240543f5c04dbd0fda15c1c46">ts_bspline_domain</a> (const <a class="el" href="structts_b_spline.html">tsBSpline</a> *spline, tsReal *min, tsReal *max)</td></tr>
 <tr class="separator:a172d455240543f5c04dbd0fda15c1c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06b316cd5862dc1fa23368dc3dfde3e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tinyspline_8h.html#a565ff3761d90530714283629d1850e9a">tsError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tinyspline_8h.html#a06b316cd5862dc1fa23368dc3dfde3e6">ts_bspline_is_closed</a> (const <a class="el" href="structts_b_spline.html">tsBSpline</a> *spline, tsReal epsilon, int *closed, <a class="el" href="structts_status.html">tsStatus</a> *status)</td></tr>
@@ -937,6 +940,9 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a565ff3761d90530714283629d1850e9aaded6cd30e818b4280046bbfa36d8cf65"></a>TS_INDEX_ERROR&#160;</td><td class="fielddoc">
 <p>Index does not exist. </p>
 </td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a565ff3761d90530714283629d1850e9aa2676da0bf50393868da0d8c168c6ae57"></a>TS_NO_RESULT&#160;</td><td class="fielddoc">
+<p>Function returns without result. </p>
+</td></tr>
 </table>
 
 </div>
@@ -972,6 +978,91 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Fills the given array <code>arr</code> with <code>val</code> from <code>arr+0</code> to <code>arr+</code> <code>num</code> (exclusive). </p>
+
+</div>
+</div>
+<a class="anchor" id="a52b5d4da7cbdd83ed1546406f9cffe99"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tinyspline_8h.html#a565ff3761d90530714283629d1850e9a">tsError</a> ts_bspline_bisect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structts_b_spline.html">tsBSpline</a> *&#160;</td>
+          <td class="paramname"><em>spline</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">tsReal&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">tsReal&#160;</td>
+          <td class="paramname"><em>epsilon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ascending</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>max_iter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structts_de_boor_net.html">tsDeBoorNet</a> *&#160;</td>
+          <td class="paramname"><em>net</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structts_status.html">tsStatus</a> *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tries to find a point P on <code>spline</code> such that: </p><pre class="fragment">ts_distance(P[index], value, 1) &lt;= fabs(epsilon)
+</pre><p>This function is using the bisection method to determine P. Accordingly, it is expected that the control points of <code>spline</code> are sorted at component <code>index</code> in ascending order if <code>ascending</code> != 0 and in descending order if <code>ascending</code> == 0. If the control points of <code>spline</code> are not sorted, the behaviour of this function is undefined. For the sake of fail-safeness, the distance of P[index] and <code>value</code> is compared with the absolute value of <code>epsilon</code>.</p>
+<p>The bisection method is an iterative approach, minimizing the error (<code>epsilon</code>) with each iteration step until an "optimum" was found. However, there may be no point P satisfying the distance condition. Thus, the number of iterations must be limited (<code>max_iter</code>). Depending on the domain of the control points of <code>spline</code> and <code>epsilon</code>, <code>max_iter</code> ranges from 7 to 80. In most cases <code>max_iter</code> == 30 should be fine though.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">spline</td><td>The spline to evaluate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>The value (point at component <code>index</code>) to find. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">epsilon</td><td>The maximum distance (inclusive). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The point's component. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ascending</td><td>Indicates whether the control points of <code>spline</code> are sorted in ascending (!= 0) or descending (== 0) order at component <code>index</code>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">max_iter</td><td>The maximum number of iterations (16 is a sane default value). </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">net</td><td>The output parameter. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>The status of this function. May be NULL. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>TS_SUCCESS On success. </dd>
+<dd>
+TS_INDEX_ERROR If the dimension of the control points of <code>spline</code> &lt;= <code>index</code>. </dd>
+<dd>
+TS_NO_RESULT If there is no point P satisfying the distance condition. </dd>
+<dd>
+TS_MALLOC If allocating memory failed. </dd></dl>
 
 </div>
 </div>
@@ -3061,7 +3152,7 @@ TS_MALLOC If allocating memory failed. </dd></dl>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>This project is maintained by <a href="https://github.com/msteinbeck">Marcel Steinbeck</a>.<br />
 &copy; 2014-2017 - TinySpline is released under the terms of the MIT license.<br />
-Generated on Fri Jul 19 2019 07:28:03 for TinySpline by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2019 11:24:38 for TinySpline by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11<br />
 Library logo and Doxygen theme custom created by <a href="https://www.nightwave.co">Nightwave Studios</a>.

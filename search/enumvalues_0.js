@@ -8,6 +8,7 @@ var searchData=
   ['ts_5flctrlp_5fdim_5fmismatch',['TS_LCTRLP_DIM_MISMATCH',['../tinyspline_8h.html#a565ff3761d90530714283629d1850e9aab847ac51bf9a1ea2397708bfd8c263e7',1,'tinyspline.h']]],
   ['ts_5fmalloc',['TS_MALLOC',['../tinyspline_8h.html#a565ff3761d90530714283629d1850e9aace5995781c849deb41c7e4c3202188a3',1,'tinyspline.h']]],
   ['ts_5fmultiplicity',['TS_MULTIPLICITY',['../tinyspline_8h.html#a565ff3761d90530714283629d1850e9aa3ce91fde828f508e1eb5b5a20500884f',1,'tinyspline.h']]],
+  ['ts_5fno_5fresult',['TS_NO_RESULT',['../tinyspline_8h.html#a565ff3761d90530714283629d1850e9aa2676da0bf50393868da0d8c168c6ae57',1,'tinyspline.h']]],
   ['ts_5fnum_5fknots',['TS_NUM_KNOTS',['../tinyspline_8h.html#a565ff3761d90530714283629d1850e9aaae619fc4e6c5ea234e6fe964d9c90246',1,'tinyspline.h']]],
   ['ts_5fparse_5ferror',['TS_PARSE_ERROR',['../tinyspline_8h.html#a565ff3761d90530714283629d1850e9aacda93d3f19672d945432b10c027fa377',1,'tinyspline.h']]],
   ['ts_5fsuccess',['TS_SUCCESS',['../tinyspline_8h.html#a565ff3761d90530714283629d1850e9aa893ab7b7cceef47e34f3a26321391a32',1,'tinyspline.h']]],
